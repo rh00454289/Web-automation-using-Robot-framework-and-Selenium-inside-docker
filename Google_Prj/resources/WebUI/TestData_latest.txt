@@ -1,0 +1,5 @@
+*** Variables ***
+#************************** Common Variables ******************************
+${HOST}               https://www.google.com/
+${BROWSER}            firefox
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190318 21:40:08.906" generator="Robot 3.0.4 (Python 2.7.13 on win32)">
+<suite source="C:\Users\raghav\Documents\Google" id="s1" name="Google">
+<suite source="C:\Users\raghav\Documents\Google\testSuites" id="s1-s1" name="testSuites">
+<suite source="C:\Users\raghav\Documents\Google\testSuites\WebUI" id="s1-s1-s1" name="WebUI">
+<suite source="C:\Users\raghav\Documents\Google\testSuites\WebUI\Google.robot" id="s1-s1-s1-s1" name="Google">
+<test id="s1-s1-s1-s1-t1" name="Create workspace and add .JPG file">
+<kw name="Given Open Browser and launch Google WebPage" library="home_latest">
+<arguments>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].firefox.webdriver.Options()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${firefox options}</var>
+</assign>
+<msg timestamp="20190318 21:40:09.113" level="INFO">${firefox options} = &lt;selenium.webdriver.firefox.options.Options object at 0x03B280F0&gt;</msg>
+<status status="PASS" endtime="20190318 21:40:09.113" starttime="20190318 21:40:09.112"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${firefox options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+</arguments>
+<status status="PASS" endtime="20190318 21:40:09.114" starttime="20190318 21:40:09.113"></status>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Firefox</arg>
+<arg>firefox_options=${firefox options}</arg>
+</arguments>
+<msg timestamp="20190318 21:40:09.115" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" endtime="20190318 21:40:13.819" starttime="20190318 21:40:09.115"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1500</arg>
+<arg>1500</arg>
+</arguments>
+<status status="PASS" endtime="20190318 21:40:13.911" starttime="20190318 21:40:13.820"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+</arguments>
+<msg timestamp="20190318 21:40:13.912" level="INFO">Opening url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20190318 21:40:15.182" starttime="20190318 21:40:13.911"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190318 21:40:15.308" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190318 21:40:15.308" starttime="20190318 21:40:15.183"></status>
+</kw>
+<status status="PASS" endtime="20190318 21:40:15.308" starttime="20190318 21:40:09.111"></status>
+</kw>
+<status status="PASS" endtime="20190318 21:40:15.309" critical="yes" starttime="20190318 21:40:09.110"></status>
+</test>
+<doc>Testing the Collaborate Web Application</doc>
+<status status="PASS" endtime="20190318 21:40:15.310" starttime="20190318 21:40:08.966"></status>
+</suite>
+<status status="PASS" endtime="20190318 21:40:15.313" starttime="20190318 21:40:08.963"></status>
+</suite>
+<status status="PASS" endtime="20190318 21:40:15.314" starttime="20190318 21:40:08.961"></status>
+</suite>
+<status status="PASS" endtime="20190318 21:40:15.316" starttime="20190318 21:40:08.942"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Google" pass="1">Google</stat>
+<stat fail="0" id="s1-s1" name="testSuites" pass="1">Google.testSuites</stat>
+<stat fail="0" id="s1-s1-s1" name="WebUI" pass="1">Google.testSuites.WebUI</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="Google" pass="1">Google.testSuites.WebUI.Google</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190318 21:40:09.105" level="ERROR">Error in file 'C:\Users\raghav\Documents\Google\keywords\Robot_keywords\home_latest.robot': Resource file '..\..\resources\WebUI\page_obj_latest.txt' does not exist.</msg>
+<msg timestamp="20190318 21:40:09.106" level="ERROR">Error in file 'C:\Users\raghav\Documents\Google\testSuites\WebUI\Google.robot': Importing test library 'ImageHorizonLibrary' failed: ImportError: No module named ImageHorizonLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Windows\SYSTEM32\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\wx-2.8-msw-unicode</msg>
+</errors>
+</robot>
