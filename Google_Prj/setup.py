@@ -25,7 +25,7 @@ setup(
 "robotframework", 
 "robotframework-selenium2library",
     ],
-    author = "Raghavendra",
+    author = "Developer",
     author_email = "rh00454289@techmahindra.com",
     license = "",
     keywords = "MyOrg Test suites",
