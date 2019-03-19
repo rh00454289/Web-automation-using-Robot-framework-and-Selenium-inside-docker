@@ -16,8 +16,8 @@ except ImportError: # for pip <= 9.0.3
     from pip.download import PipSession
 
 setup(
-    name='A10',
-    description='A10 test suite',
+    name='MyOrg',
+    description='MyOrg test suite',
     version='2.1.0',
     #packages=find_packages(exclude=["tests.*", "tests"]),
     packages=find_packages(),
@@ -28,7 +28,7 @@ setup(
     author = "Raghavendra",
     author_email = "rh00454289@techmahindra.com",
     license = "",
-    keywords = "A10 Test suites",
+    keywords = "MyOrg Test suites",
     #url = "https://",
     zip_safe=False,
 )
