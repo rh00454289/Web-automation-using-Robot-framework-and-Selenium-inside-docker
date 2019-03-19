@@ -14,8 +14,8 @@ GooglePrj>testsuites>a10ts.sh
 
 
 Issue details to run firefox inside the docker.
-After performing the docker build and executing the test case i am getting the below error.
 
+After performing the docker build and executing the test case i am getting the below error.
 SessionNotCreatedException: Unable to find a matching set of capabilities
 
 Your suggestions are much appreciated.
