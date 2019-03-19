@@ -1,6 +1,6 @@
 ##Contents of Dockerfile
 FROM ubuntu:latest
-MAINTAINER Google
+MAINTAINER MyOrg
 
 #Proxy settings & Environment
 ENV HTTP_PROXY http://10.240.72.123:8080/
@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y \
 
 
 FROM python:2.7
-MAINTAINER A10Networks
+MAINTAINER MyOrg
 
 RUN useradd -d ${APPDIR} ${APPUSER}
 
