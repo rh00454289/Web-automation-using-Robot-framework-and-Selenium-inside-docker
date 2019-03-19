@@ -17,4 +17,4 @@ After performing the docker build and executing the test case i am getting the b
 
 SessionNotCreatedException: Unable to find a matching set of capabilities
 
-Your suggestions are much appriciated.
+Your suggestions are much appreciated.
